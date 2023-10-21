@@ -1,0 +1,13 @@
+SQUARE ROOT DECOMPOSITION
+--> Query optimisation
+--> Reduces the time complexity of the query from O(n) to O(sqrt(n))
+
+Steps:
+1) Divide the array into blocks of size sqrt(n)
+2) Preprocess the blocks and store the results in an array (eg: sum of elements in each block)
+3) Query L to R, combine answers from blocks and get the final answer
+
+MO'S ALGORITHM
+--> Offline queries- queries are given in advance and reordering of queries does not affect the answer
+--> No update queries
+--> eg. https://www.spoj.com/problems/DQUERY/en/
